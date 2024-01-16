@@ -1,8 +1,8 @@
 public class ArrayOps {
     public static void main(String[] args) {
-        int[] testArray = {1, 2, 3, 5, 8, 9};
+        int[] testArray = {1, 2, 8, 5, 8, 8};
         int[] testArray2 = {1, 2};
-        System.out.println(isSorted(testArray));
+        System.out.println(secondMaxValue(testArray));
     }
     
     public static int findMissingInt(int [] array) {
@@ -27,8 +27,8 @@ public class ArrayOps {
 
     public static int secondMaxValue(int [] array) {
         
-        int max = 0;
-        int secondMax = 0;
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
 
         for (int i = 0; i < array.length; i++){
             if (array[i]>max){
