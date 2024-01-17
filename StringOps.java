@@ -22,7 +22,7 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        System.out.println(camelCase(" two  wordS"));
+        System.out.println(camelCase("Hello World"));
         
     }
 
